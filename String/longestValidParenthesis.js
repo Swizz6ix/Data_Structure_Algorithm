@@ -45,11 +45,10 @@ const longestValidParenthesis2 = (str) => {
       stack.push(i);
       continue;
     }
-console.log(stack)
+
     stack.pop();
-    console.log(stack)
-    if (!stack.length) stack.push(i), console.log('hg', stack, i);
-    else longest = Math.max(longest, (i - stack[stack.length - 1])), console.log('kd', longest, i);
+    if (!stack.length) stack.push(i);
+    else longest = Math.max(longest, (i - stack[stack.length - 1]));
   }
   return longest;
 }

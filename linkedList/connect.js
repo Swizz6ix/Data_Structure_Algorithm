@@ -62,6 +62,5 @@ const connectII = (root) => {
       root = dummy.next;
     }
   }
-  // console.log('seed', head.left.next)
   return head;
 }

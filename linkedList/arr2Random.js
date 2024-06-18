@@ -1,7 +1,6 @@
 const arr2Random = (array) => {
   let root = null;
   for (i = 0; i < array.length; i++) {
-    console.log("host", i)
     const arr = array[i];
     root = insertRandom(root, arr[0], arr[1])
   }
